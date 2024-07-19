@@ -1,0 +1,177 @@
+/* main.css */
+
+body,
+input,
+textarea,
+button {
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #5A5050;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.app-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  margin-bottom: 20px;
+}
+
+.form-inputs input,
+.form-inputs textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.form-inputs textarea {
+  resize: vertical; /* Allow vertical resizing only */
+  max-width: 100%; /* Limit width to 100% */
+}
+
+.form-inputs input:focus,
+.form-inputs textarea:focus {
+  border-color: #4caf50; /* Change border color on focus */
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-buttons button {
+  margin-left: 10px;
+  padding: 12px 20px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.form-buttons button:hover {
+  background-color: #45a049;
+}
+
+.student-list {
+  list-style: none;
+  padding: 0;
+}
+
+.student-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.3s;
+}
+
+.student-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.action-button {
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.action-button.view-button {
+  background-color: #2196F3;
+  color: #fff;
+}
+
+.action-button.edit-button {
+  background-color: #FFC107;
+  color: #fff;
+}
+
+.action-button.delete-button {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.action-button:hover {
+  filter: brightness(85%);
+}
+
+.view-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.view-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.view-content strong {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.view-content p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.view-content .name-label {
+  font-weight: bold;
+}
+
+.close-button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.close-button:hover {
+  background-color: #d32f2f;
+}
